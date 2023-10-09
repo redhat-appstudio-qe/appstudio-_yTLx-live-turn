@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-fsqa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-deploy-tenant/appstudio/dc-metro-map-fsqa@sha256:a9ebcbc6a08155628cb01e6186ef773d51760b5711e628f8aeee1d0813142a4b
+        name: my-nodejs
+        resources: {}
+status: {}
